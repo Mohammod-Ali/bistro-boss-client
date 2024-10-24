@@ -14,6 +14,7 @@ const PopularMenu = () => {
       });
   }, []);
   return (
+    <>
     <section className="mb-12">
       <SectionTitle
         heading={"From Our Menu"}
@@ -27,7 +28,16 @@ const PopularMenu = () => {
             ></MenuItem>)
         }
       </div>
+    <div className="text-center">
+    <button className="btn btn-outline border-0 border-b-4 mt-3">View Full Menu</button>
+    </div>
     </section>
+
+  {/* call us section */}
+    <section className="text-white bg-black text-center text-4xl font-semibold p-10">
+        <h3>Call Us: +88 01933900625</h3>
+    </section>
+    </>
   );
 };
 

@@ -10,11 +10,13 @@ import img3 from '../../../assets/home/slide3.jpg'
 import img4 from '../../../assets/home/slide4.jpg'
 import img5 from '../../../assets/home/slide5.jpg'
 import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
+import './Category.css'
 
 
 
 const Category = () => {
     return (
+        <>
         <section>
             <SectionTitle 
             heading={"Order Online"}
@@ -52,7 +54,16 @@ const Category = () => {
         </SwiperSlide>
         
       </Swiper>
+
         </section>
+    {/* second section of bistro */}
+        <section className='order-online-bg p-24 text-center mb-20'>
+           <div className='bg-white p-24'>
+           <h1 className='uppercase text-4xl mb-3'>Bistro boss</h1>
+           <p className='px-10'>"Treat yourself to the flavors of Bistro Boss! Order now and enjoy freshly prepared dishes, crafted with care. Fast, convenient, and delicious – your perfect meal awaits, just a click away!"</p>
+           </div>
+        </section>
+        </>
     );
 };
 
