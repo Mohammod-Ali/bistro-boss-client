@@ -12,6 +12,7 @@ const Menu = () => {
             </Helmet>
             <Cover img={menuImg} title='our menu' description={'Would you like to try a dish?'}></Cover>
             <PopularMenu></PopularMenu>
+            
         </div>
     );
 };
