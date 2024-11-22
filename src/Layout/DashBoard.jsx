@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaAd, FaCalendar, FaHome, FaList, FaShoppingCart } from 'react-icons/fa';
+import { FaAd, FaCalendar, FaHome, FaList, FaSearch, FaShoppingCart } from 'react-icons/fa';
 import { NavLink, Outlet } from 'react-router-dom';
 
 const DashBoard = () => {
@@ -27,10 +27,17 @@ const DashBoard = () => {
                         
                         <NavLink to='/dashboard/bookings'><FaList></FaList> My Bookings</NavLink>
                     </li>
+                    <div className='divider'></div>
+                    <li>
+                        <NavLink to='/'><FaHome></FaHome> Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/order/salad'><FaSearch></FaSearch> Menu</NavLink>
+                    </li>
                 </ul>
             </div>
-            {/* dashboard layout */}
-            <div className='flex-1'>
+            {/* dashboard content */}
+            <div className='flex-1 p-8'>
                 <Outlet></Outlet>
             </div>
         </div>
