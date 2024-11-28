@@ -44,11 +44,11 @@ import Cart from "../Page/Dashboard/Cart/Cart";
       ]
     },
     {
-      path: '/dashboard',
+      path: 'dashboard',
       element: <DashBoard></DashBoard>, 
       children: [
         {
-          path: '/cart',
+          path: 'cart',
           element: <Cart></Cart>
         }
       ]
