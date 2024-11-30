@@ -1,11 +1,21 @@
 import { FaGoogle } from "react-icons/fa";
+import useAuth from "../../../hooks/useAuth";
 
 const SocialLogin = () => {
+    const {googleSignIn} = useAuth()
+
+    const handleGoogleSignIn =() => {
+        googleSignIn()
+        .then(result => {
+            console.log(result)
+        })
+    }
+
   return (
     <div className="p-8">
         <div className="divider"></div>
       <div>
-        <button className="btn  btn-warning">
+        <button onClick={handleGoogleSignIn} className="btn  btn-warning">
           <FaGoogle></FaGoogle>
           Google
         </button>
