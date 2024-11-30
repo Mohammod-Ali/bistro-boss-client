@@ -151,7 +151,7 @@ const SignUp = () => {
                 />
               </div>
             </form>
-            <p>
+            <p className="px-6 py-1">
               <small>
                 Already have an account? <Link to="/login">Please Login</Link>
               </small>{" "}
